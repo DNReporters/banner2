@@ -9,10 +9,10 @@ echo
 read varB
 
 #cowsay
-echo -e"Whats Is Your Cowsay Name"
+echo -e "Whats Is Your Cowsay Name"
 read varC
 
-echo "clear" >clear.txt
+echo "clear">clear.txt
 echo "cowsay -f eyes "$varC"lolcat">cowsay.txt
 echo "figlet "$varB"lolcat">ban.txt
 #new add
