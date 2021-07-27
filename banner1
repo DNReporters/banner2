@@ -1,7 +1,7 @@
 clear
 
 #logo
-figlet Hacker
+figlet Hacker|Sl
 
 #banner
 echo -e "What Is Your Banner Name"
@@ -9,20 +9,19 @@ echo
 read varB
 
 #cowsay
-echo -e "Whats Is Your Cowsay Name"
+echo -e"Whats Is Your Cowsay Name"
 read varC
-echo
 
 echo "clear" >clear.txt
-echo "cowsay -f eyes "$varc"lolcat">cowsay.txt
-echo "figlet "$varB"|lolcat">ban.txt
+echo "cowsay -f eyes "$varC"lolcat">cowsay.txt
+echo "figlet "$varB"lolcat">ban.txt
 #new add
 
 m -rf /data/data/com.termux/files/usr/etc/zshrc
 cp zshrc /data/data/com.termux/files/usr/etc/
 
 
-cat"clear.txt">> /data/data/com.termux/files/usr/etc/zshrc
+cat"clear.txt">>/data/data/com.termux/files/usr/etc/zshrc
 cat"cowsay.txt">>/data/data/com.termux/files/usr/etc/zshrc
 cat"ban.txt">>/data/data/com.termux/files/usr/etc/zshrc
 
@@ -33,6 +32,5 @@ rm -rf cowsay.txt
 rm -rf ban.txt
 
 #end
-
-figlet Finish| lolcat
 exit
+figlet Finish
